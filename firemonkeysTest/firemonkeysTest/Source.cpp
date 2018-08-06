@@ -184,9 +184,10 @@ int main()
 
 	std::string targetString = "dawdsx";
 
-	for (auto it = timers.begin(), end = timers.end(); it != end; it++)
+	for (auto it = timers.begin(), end = timers.end(); it != end;)
 	{
 		std::cout << it->c_str() << std::endl;
+		it++;
 	}
 
 	std::cout << std::endl;
@@ -195,7 +196,7 @@ int main()
 	for (auto it = timers.begin(); it != timers.end();)
 	{
 		//if it has expired
-		if (it->IsExpired())
+		if (*it == targetString)
 		{
 			//set it to the next index in the array and remove the old one
 			it = timers.erase(it);
@@ -206,19 +207,19 @@ int main()
 			it++;
 		}
 	}
-}
-
-
-for (auto it = timers.begin(), end = timers.end(); it != end;)
-{
-	std::cout << it->c_str() << std::endl;
-	it++;
-}
 
 
 
+	for (auto it = timers.begin(), end = timers.end(); it != end;)
+	{
+		std::cout << it->c_str() << std::endl;
+		it++;
+	}
 
-system("pause");
+
+
+
+	system("pause");
 
 
 }
