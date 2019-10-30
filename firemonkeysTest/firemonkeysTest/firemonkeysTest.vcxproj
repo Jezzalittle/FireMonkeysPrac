@@ -115,7 +115,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DoorAnimationTest.cpp" />
+    <ClCompile Include="RemoveExpiredTimersTest.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="StreamTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DoorAnimationTest.h" />
+    <ClInclude Include="RemoveExpiredTimersTest.h" />
+    <ClInclude Include="StreamTest.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
